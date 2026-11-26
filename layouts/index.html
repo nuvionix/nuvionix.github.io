@@ -1,0 +1,5 @@
+{{ define "main" }}
+<section class="hero"><div class="eyebrow">COMPUTER SCIENCE · FAST NUCES</div><h1>Hi, I’m <span>Muhammad Umair.</span></h1><p class="intro">I’m a Computer Science student documenting what I learn about programming, software engineering, Linux, and developer tools.</p><div class="hero-links"><a class="primary-link" href="{{ "posts/" | relURL }}">Explore articles <b>→</b></a><a href="{{ .Site.Params.github }}" target="_blank" rel="noreferrer">GitHub ↗</a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>
+<section class="section-head"><div><div class="eyebrow">THE KNOWLEDGE BASE</div><h2>Latest articles</h2></div><a href="{{ "posts/" | relURL }}">All posts →</a></section>
+<section class="grid">{{ range first 9 (where .Site.RegularPages "Section" "posts") }}{{ partial "post-card.html" . }}{{ end }}</section>
+{{ end }}

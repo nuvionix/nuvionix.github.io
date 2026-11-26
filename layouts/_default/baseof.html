@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="{{ .Site.Home.RelPermalink }}">MU<span>.</span></a><nav><a href="{{ .Site.Home.RelPermalink }}">Home</a><a href="{{ "posts/" | relURL }}">Blogs</a><a href="{{ .Site.Params.github }}" target="_blank" rel="noreferrer">GitHub ↗</a></nav></header>
+  <main>{{ block "main" . }}{{ end }}</main>
+  <footer class="footer"><span>© {{ now.Year }} Muhammad Umair</span><span>Built with Hugo · FAST NUCES</span></footer>
+</body>
+</html>

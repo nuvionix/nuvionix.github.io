@@ -1,0 +1,19 @@
+baseURL = "https://nuvionix.github.io/"
+languageCode = "en-us"
+title = "Muhammad Umair | CS Notes"
+theme = ""
+enableRobotsTXT = true
+summaryLength = 28
+
+[pagination]
+  pagerSize = 12
+
+[params]
+  author = "Muhammad Umair"
+  description = "Computer Science student at FAST NUCES. Notes, projects, and practical guides."
+  github = "https://github.com/nuvionix"
+  linkedin = "https://www.linkedin.com/in/muhammad-umair-285414430/"
+  email = "p250627@pwr.nu.edu.pk"
+
+[markup.goldmark.renderer]
+  unsafe = false

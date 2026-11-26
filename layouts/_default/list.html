@@ -1,0 +1,4 @@
+{{ define "main" }}
+<section class="page-heading"><div class="eyebrow">NOTES & GUIDES</div><h1>{{ .Title }}</h1><p>Practical notes from my Computer Science learning journey.</p></section>
+<section class="grid">{{ range .Pages }}{{ partial "post-card.html" . }}{{ end }}</section>
+{{ end }}

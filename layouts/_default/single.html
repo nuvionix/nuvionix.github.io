@@ -1,0 +1,3 @@
+{{ define "main" }}
+<article class="article"><a class="back" href="{{ "posts/" | relURL }}">← All articles</a><header class="article-head"><div class="eyebrow">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</div><h1>{{ .Title }}</h1><p class="article-desc">{{ .Description }}</p><div class="meta">Muhammad Umair <span>·</span> {{ .Date.Format "2 January 2006" }} <span>·</span> {{ .ReadingTime }} min read</div></header><div class="article-content">{{ .Content }}</div><div class="article-end"><p>Written by Muhammad Umair · FAST NUCES</p><a href="{{ .Site.Params.github }}">Find me on GitHub ↗</a></div></article>
+{{ end }}
