@@ -1,7 +1,6 @@
 baseURL = "https://nuvionix.github.io/"
 languageCode = "en-us"
 title = "Muhammad Umair | CS Notes"
-theme = ""
 enableRobotsTXT = true
 summaryLength = 28
 
